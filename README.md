@@ -29,7 +29,7 @@ Copy .tmux.conf to home folder
 
 ### Usage
 
-The prefix for Tmux was changed to uses CTRL+a
+The prefix for Tmux was changed to use CTRL+a
 
 How to use vi mode
 
