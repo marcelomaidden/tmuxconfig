@@ -4,7 +4,9 @@ on:
     types: [review_requested]
 jobs:
   review_requested:
-    name: Send webhook to request review
-    uses: distributhor/workflow-webhook@v3
-    with:
-      webhook_url: "https://uolinc.webhook.office.com/webhookb2/890d8fec-4f2f-4e48-bf69-d2a0a0819001@7575b092-fc5f-4f6c-b7a5-9e9ef7aca80d/IncomingWebhook/4ca817321d7545e2b7295ff7017d20e1/d65b5050-c86b-44f1-b9aa-b571e8619592"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send webhook message
+        uses: distributhor/workflow-webhook@v3
+        with:
+          webhook_url: "https://uolinc.webhook.office.com/webhookb2/890d8fec-4f2f-4e48-bf69-d2a0a0819001@7575b092-fc5f-4f6c-b7a5-9e9ef7aca80d/IncomingWebhook/4ca817321d7545e2b7295ff7017d20e1/d65b5050-c86b-44f1-b9aa-b571e8619592"
