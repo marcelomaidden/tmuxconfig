@@ -9,7 +9,7 @@ jobs:
       - name: Send webhook message
         uses: neonidian/teams-notify-build-status@v3
         with:
-          webhookUrl:: ${{ secrets.WEBHOOK_URL }}
+          webhookUrl: ${{ secrets.WEBHOOK_URL }}
           title: >-
             [Repository link](${{ github.server_url }}/${{ github.repository }})
           message: Review to PR requested
