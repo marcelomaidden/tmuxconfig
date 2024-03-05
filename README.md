@@ -1,4 +1,4 @@
-# Tmux configuration file
+# Tmux configuration
 
 Basic configuration for Tmux using vi mode 
 
