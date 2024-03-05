@@ -12,4 +12,4 @@ jobs:
           webhook_url: ${{ secrets.WEBHOOK_URL }}
           webhook_type: 'json-extended'
           verbose: true
-          data: '{ "request_review": $GITHUB_REPOSITORY, "message": "Review requested" }'
+          data: '{ "message": "Review requested" }'
