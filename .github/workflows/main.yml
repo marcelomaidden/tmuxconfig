@@ -12,4 +12,4 @@ jobs:
           webhook_url: ${{ secrets.WEBHOOK_URL }}
           webhook_type: 'json-extended'
           verbose: true
-          data: '{ "message": "Review requested" }'
+          data: '{"@context": "http://schema.org/extensions","@type": "MessageCard", "text": "Review requested"}'
