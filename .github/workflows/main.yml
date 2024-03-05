@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send webhook message
-        uses: distributhor/workflow-webhook@v3
+        uses: neonidian/teams-notify-build-status@v3
         with:
-          webhook_url: ${{ secrets.WEBHOOK_URL }}
-          webhook_type: 'json-extended'
-          verbose: true
-          data: '{"@context": "http://schema.org/extensions","@type": "MessageCard", "text": "Review requested"}'
+          webhookUrl:: ${{ secrets.WEBHOOK_URL }}
+          title: >-
+            [Repository link](${{ github.server_url }}/${{ github.repository }})
+          message: Review to PR requested
